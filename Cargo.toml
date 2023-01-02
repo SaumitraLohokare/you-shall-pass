@@ -1,0 +1,17 @@
+[package]
+name = "you-shall-pass"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
+surrealdb = "1.0.0-beta.8"
+magic-crypt = "3.1.12"
+clap = { version = "4.0.32", features = ["cargo", "derive"] }
+
+[[bin]]
+name = "ysp"
+path = "src/main.rs"
